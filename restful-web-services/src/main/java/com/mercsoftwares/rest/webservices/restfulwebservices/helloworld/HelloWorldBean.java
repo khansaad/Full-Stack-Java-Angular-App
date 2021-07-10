@@ -1,4 +1,4 @@
-package com.mercsoftwares.rest.webservices.restfulwebservices;
+package com.mercsoftwares.rest.webservices.restfulwebservices.helloworld;
 
 public class HelloWorldBean {
 	
