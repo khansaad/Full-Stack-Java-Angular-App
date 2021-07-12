@@ -27,17 +27,17 @@ export class WelcomeComponent implements OnInit {
       response => this.handleSuccessResponse(response),
       error => this.handleErrorResponse(error)
     );
-    console.log('last line')
+    //console.log('last line')
     //console.log('Get Welcome Message');
   }
 
   getWelcomeMessageWithParam(){
     //console.log(this.service.executeHelloWOrldBeanService());
-    this.service.executeHelloWOrldBeanServiceWithPathVaraible(this.name).subscribe(
+    this.service.executeBasicAuthService(this.name).subscribe(
       response => this.handleSuccessResponse(response),
       error => this.handleErrorResponse(error)
     );
-    console.log('last line')
+    //console.log('last line')
     //console.log('Get Welcome Message');
   }
   handleErrorResponse(error){

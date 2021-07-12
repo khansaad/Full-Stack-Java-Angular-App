@@ -1,10 +1,10 @@
-package com.mercsoftwares.rest.webservices.restfulwebservices.helloworld;
+package com.mercsoftwares.rest.webservices.restfulwebservices.basic.auth;
 
-public class HelloWorldBean {
+public class AuthenticationBean {
 	
 	String message;
 	
-	public HelloWorldBean(String message) {
+	public AuthenticationBean(String message) {
 		this.message = message;
 	}
 
