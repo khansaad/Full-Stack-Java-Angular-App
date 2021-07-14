@@ -7,9 +7,7 @@
     User Name : <input type="text" name="username" value="{{username}}" [(ngModel)] = "username">
     Password : <input type="password" name="password" value="{{password}}" [(ngModel)] = "password">
 
-    <!-- User Name : {{username}} -->
-    <!-- <button (click)=handleLogin() class="btn btn-success">Login</button> -->
-    <button (click)=handleBasicAuthLogin() class="btn btn-success">Login</button>
+    <button (click)=handleJWTAuthLogin() class="btn btn-success">Login</button>
 
   </div>
 </div>

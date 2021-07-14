@@ -38,9 +38,23 @@ export class LoginComponent implements OnInit {
   // }
 
   handleBasicAuthLogin(){
-    //console.log(this.username)
-    //if(this.username==='mercurial' && this.password === 'dummy'){
-    this.basicAuthService.executeAuthService(this.username, this.password)
+    
+    this.basicAuthService.executeAuthService(this.username, this.password)    
+      .subscribe(
+        data => {
+          console.log(data)
+          this.router.navigate(['welcome', this.username])
+          this.invalidLogin = false
+        },
+        error => {
+          console.log(error)
+          this.invalidLogin = true
+        }
+      )
+  }
+  handleJWTAuthLogin(){
+
+    this.basicAuthService.executeJWTAuthService(this.username, this.password)
       .subscribe(
         data => {
           console.log(data)

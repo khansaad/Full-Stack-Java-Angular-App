@@ -1,4 +1,4 @@
-package com.mercsoftwares.rest.webservices.restfulwebservices.basic.auth;
+package com.mercsoftwares.rest.basic.auth;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
